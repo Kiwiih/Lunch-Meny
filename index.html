@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch-Meny</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f80359c2af.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="popup" onclick="menyPopup()">
+        <span class="popuptext" id="myPopup">
+            <h2>Meny:</h2>
+            <ul>
+                <li>
+                    <b>Exklusiva:</b> <br>
+                Tomatsås, Mozzarellaost, Pepperoni, Champinjoner, Paprika, Lök <br>
+                Tomatsås, Mozzarellaost, Skinka, Ananas, Svarta oliver, Basilika<br>
+                Tomatsås, Ost, Salami, Champinjoner, Lök, Färsk basilika.<br>
+                </li>
+                <li>
+                <b>Vegetariska:</b><br>
+                Tomatsås, Mozzarellaost, Svarta oliver, Champinjoner, Paprika, Ruccola.<br>
+                Tomatsås, Skåneost, Rödlök, Färsk basilika, Kalamataoliver, Grön paprika.<br>
+                </li>
+                <li>
+                <b>Hamburgare:</b><br>
+                Hamburgare 90g, Ost, Sallad, Tomat, Lök, Ketchup.<br>
+                Hamburgare 90g, Ost, Sallad, Gurka.<br>
+                Hamburgare 90g, Ost, Lökringar, BBQ-sås, Riven muskotnöt.<br>
+                </li>
+                <li>
+                <b>Kebab:</b><br>
+                Kebab med pommes och svensk sallad.<br>
+                Kebabsallad med vitlökssås och nybakat bröd.<br>
+                </li>
+                <li>
+                <b>Tillbehör:</b><br>
+                Vitlökssås.<br>
+                Kebabsås.<br>
+                BBQ-sås.<br>
+                </li>
+                <li>
+                <b>Dryck:</b><br>
+                Läsk (Trocadero, Sprite, Pepsi, Cola)<br>
+                Kaffe<br>
+                Celsius<br>
+                </li>
+
+            </ul>
+        </span>
+        <!-- <button id="close-button">Close</button> -->
+    </div>
+    <main class="main-content">
+    
+    <form>
+        <h1>Lunch Meny</h1>
+        <h3>🐱‍🐉Allergier:</h3>
+        <input type="checkbox" id="allergie1" name="allergie1" value="Gluten">
+        <label for="vehicle1"> Gluten</label><br>
+        <input type="checkbox" id="allergie2" name="allergie2" value="Laktos">
+        <label for="vehicle2"> Laktos</label><br>
+        <input type="checkbox" id="allergie3" name="allergie3" value="Nötter">
+        <label for="vehicle3"> Nötter</label> <br>
+        <input type="checkbox" id="allergie4" name="allergie4" value="Rotsaker">
+        <label for="vehicle4"> Rotsaker</label>
+        <br><br>
+
+        <h3>🍔Är du student eller pensionär?</h3>
+        <input type="radio" id="student" name="occupation" value="student">
+        <label for="student">Student</label> <br>
+        <input type="radio" id="pensionär" name="occupation" value="pensionär">
+        <label for="pensionär">Pensionär</label> <br>
+        <input type="radio" id="nothing" name="occupation" value="nothing">
+        <label for="student">Ingetdera</label> <br>
+        
+        <h3>🥩Har du några önskemål? Eller något annat vi bör veta.</h3>
+        <textarea name="text" id="optional" cols="56" rows="10"></textarea>
+        <br>
+        <br>
+        <button class="btn" onclick="menyPopup()" type="button">Skicka in</button> 
+        <br>
+        <br>
+        <br>
+      </form>
+ 
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
